@@ -144,19 +144,15 @@
           \ifbool{isstart}{\setbool{isstart}{false}}%
           \href{mailto:\@email}{~\nolinkurl{\@email}}%
         }%
-        \ifthenelse{\isundefined{\@mobile} \AND \isundefined{\@email}}{}{\\}%
+       
         \setbool{isstart}{true}%
-        \ifthenelse{\isundefined{\@homepage}}{}{%
-          \ifbool{isstart}{\setbool{isstart}{false}}{~~$\cdot$~~}%
-          \href{\@homepage}{\faIcon{home}~\nolinkurl{\@homepage}}%
-        }%
         \ifthenelse{\isundefined{\@github}}{}{%
-          \ifbool{isstart}{\setbool{isstart}{false}}{~~$\cdot$~~}%
-          \href{https://github.com/\@github}{\faIcon{github}~\@github}%
+          \ifbool{isstart}{\setbool{isstart}{false}}%
+          \href{https://github.com/\@github}%
         }%
-        \ifthenelse{\isundefined{\@linkedin}}{}{%
-          \ifbool{isstart}{\setbool{isstart}{false}}{~~$\cdot$~~}%
-          \href{https://www.linkedin.com/in/\@linkedin}{\faIcon{linkedin}~\@linkedin}%
+        \ifthenelse{\isundefined{\@linkedin}}{}{\\}{%
+          \ifbool{isstart}{\setbool{isstart}{false}}%
+          \href{}{https://www.linkedin.com/in/\@linkedin}%
         }%
       \end{flushright}
     \end{minipage}
