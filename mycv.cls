@@ -129,7 +129,7 @@
   \clearpage%
   \begin{adjustwidth}{\dimexpr\Gm@rmargin-\Gm@lmargin\relax}{}
     \begin{minipage}[c]{.3\linewidth}
-      \scalebox{1.2}{\Huge\@name}%
+      \scalebox{1}{\Huge\@name}%
     \end{minipage}%
     \begin{minipage}[c]{.7\linewidth}
       \begin{flushright}
