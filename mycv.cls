@@ -52,7 +52,7 @@
 \RequirePackage[strict]{changepage}
 \geometry{
   a4paper,
-  top=2cm,
+  top=1.75cm,
   bottom=2cm,
   left=4.5cm,
   right=1.5cm,
@@ -148,11 +148,11 @@
         \setbool{isstart}{true}%
         \ifthenelse{\isundefined{\@github}}{}{%
           \ifbool{isstart}{\setbool{isstart}{false}}%
-          \href{https://github.com/\@github}%
+          \href{}{}%
         }%
         \ifthenelse{\isundefined{\@linkedin}}{}{\\}{%
           \ifbool{isstart}{\setbool{isstart}{false}}%
-          \href{}{https://www.linkedin.com/in/\@linkedin}%
+          \href{}{}%
         }%
       \end{flushright}
     \end{minipage}
